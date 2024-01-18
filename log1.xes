@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<log xmlns="http://www.xes-standard.org/" xes.version="2.0" xes.features="nested-attributes">
+  <extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext"/>
+  <extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext"/>
+  <extension name="Lifecycle" prefix="lifecycle" uri="http://www.xes-standard.org/lifecycle.xesext"/>
+  <global scope="trace">
+    <string key="concept:name" value="__INVALID__"/>
+  </global>
+  <global scope="event">
+    <string key="concept:name" value="__INVALID__"/>
+    <string key="lifecycle:transition" value="complete"/>
+    <date key="time:timestamp" value="2021-10-29T07:45:00.000+01:00"/>
+  </global>
+  <classifier name="Name" keys="concept:name"/>
+  <classifier name="Lifecycle" keys="lifecycle:transition"/>
+  <trace>
+    <string key="concept:name" value="Instanz 1"/>
+    <event>
+      <string key="concept:name" value="A"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2021-10-29T07:55:19.523+01:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2021-10-29T08:17:35.000+01:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="C"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2021-10-29T08:27:35.000+01:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="D"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2021-10-29T08:31:04.000+01:00"/>
+    </event>
+  </trace>
+    <trace>
+    <string key="concept:name" value="Instanz 2"/>
+    <event>
+      <string key="concept:name" value="A"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2017-03-01T07:56:40.523+01:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="C"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2017-03-03T08:18:35.000+01:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2017-03-03T08:28:35.000+01:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="D"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2021-10-29T08:34:19.000+01:00"/>
+    </event>
+  </trace>
+    <trace>
+    <string key="concept:name" value="Instanz 3"/>
+    <event>
+      <string key="concept:name" value="A"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2017-03-01T07:59:19.523+01:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2017-03-03T08:10:35.000+01:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="C"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2017-03-03T08:27:35.000+01:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="D"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2021-10-29T08:59:09.000+01:00"/>
+    </event>
+  </trace>
+</log>
